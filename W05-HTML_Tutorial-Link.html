@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatting</title>
+    <title>Link</title>
     <style>
 
         body{
@@ -17,12 +17,12 @@
 
         .container {
             max-width: 1500px;
-            margin: auto;
+            margin: 75px;
         }
         
         header {}
 
-        h1 {text-align: center;}
+        h1 {margin-left: 700px;}
 
         .Pc {
             text-align: left;
@@ -30,7 +30,7 @@
             font-size: 24px;
         }
 
-        h3 {text-align: center;}
+        h3 {margin-left: 650px;}
 
         ul {}
 
@@ -74,6 +74,12 @@
             font-size: 16px;
             padding: 5px 20px;
            }
+
+        .Image-link img{
+            width: 260px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
 
         .card2 {
             background-color: aliceblue;
@@ -151,106 +157,133 @@
         background-color: rgb(255, 255, 255); 
         }
 
+        .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        }
+
+        grid-3 col{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        }
+
+
     </style>
 </head>
 <body>
-    <header>
-        <h1 class="h1">Workshop : various Link </h1>
-        <h3><p>เรียนรู้ลิ้งค์หลายรูปเเบบ พร้อมตัวอย่างเเละเเบบผึกหัด</p></h3>
 
-    </header>
-
-    <main>      
-    <!-- Card 1 -->
-     <div class="card">
-        <h2>External links</h2>
-        <div class="card2">
-                <a href=""class="link">Visit Wikipedia</a>
-                <p style="margin-top: 0;"><code>target="_blank"</code> เปิดลิ้งในแท็บใหม่</p>
-            </div>           
-            <div class="card2">
-                <a href=""class="link">Visit Google</a>
-                <p style="margin-top: 0;"><code>target="_seft"</code> เปิดลิ้งในแท็บใหม่</p>
-            </div>  
-        </div>
-
-    
-
-<!-- Card 2 -->
-
-        <div class="card module-2"><h2>Internal Link & Anchor Link</h2>
-            <pre class="PP">       
-            &lt;a href="about.html"&gt;About Us&lt;/a&gt;
-            &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
-            &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;  
-        </pre>
-        <a href="" class="Tha">Cilck to Jump</a>
-        <h3>This is the jump target.</h3>
-        </div>
-
-<!-- Card 3 -->
-        <div class="card module-3">
-            <h1 class="Pc">Email Link</h1>
-            <pre class="PP">       
-            &lt;a href="mailto:student@example.com?subject=Hello"&gt;
-            Send an Email
-            &lt;/a&gt;
-  
-        </pre>
-        <a href="" class="Than">Send an Email</a>
-        </div>
-
- <!-- Card 4 -->
-        <div class="card module-4">
-            <h1 class="Pc">Download Linsk</h1>
-        <pre class="PP">       
-            &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;;
-        </pre>
-
-         <a href="" class="Thana">Download Textfile</a>
-         <p class="c1">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง </p>
-        </div>
-
-<!-- Card 5 -->
-        <div class="card module-5">
-        <h2>Button Link</h2>
-        <p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
-        <pre class="PP">    
-            &lt;a href="https://www.example.com" class="btn-link"&gt;
-                Visit Website
-            &lt;/a&gt;        
-        </pre>
-         <a href="" class="Th">Visit Website</a>
-        <p>สร้างปุ่มด้วยเเท็ก Bottom</p>
-          <pre class="PP">    
-            &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
-            - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
-            - ผูกกับ DOM (document) โดยตรง
-            &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website
-            &lt;/button&gt;
-            - นิยมใช้มากกว่า
-            - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
-            - ผูกกับ window โดยตรง        
-        </pre>
-        <button class="Ass">HTML Tutorial</button>
-       <button class="Ass">Visit Website</button> 
-        </div>
-
-<!-- Card 6 -->
-        <div class="card module-6">
-        <h2>Image Link</h2>
-        <p>คลิกที่รูปเพื่อเปิดลิ้งค์</p>
-        <pre class="PP">&lt;a href="https://youtube.com"&gt;
-            &lt;img src="images/sample.jpg" width="250"&gt;
-            &lt;/a&gt;
-        </pre>
-        <a href="https://www.youtube.com/" target="_blank">
-            <img src="youtube.png" alt="YouTube" width="150" height="100">
-        </a>
+    <div>
+        <div class="container">
         
-            <div class="note">📍หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jpg</div>
-            
-            <a href="index.html"class="Thanas">&larr; Back to HTML Tutorial </a>
+            <header>
+                <h1 class="h1">Workshop : various Link </h1>
+                <h3><p>เรียนรู้ลิ้งค์หลายรูปเเบบ พร้อมตัวอย่างเเละเเบบผึกหัด</p></h3>
+            </header>
+        
+           <div class="card-grid">
+               
+                <!-- Card 1 -->
+                 <div class="card">
+                    <h2>1.External links</h2>
+                    <div class="card2">
+                            <a href=""class="link">Visit Wikipedia</a>
+                            <p style="margin-top: 0;"><code>target="_blank"</code> เปิดลิ้งในแท็บใหม่</p>
+                        </div>
+                        <div class="card2">
+                            <a href=""class="link">Visit Google</a>
+                            <p style="margin-top: 0;"><code>target="_seft"</code> เปิดลิ้งในแท็บใหม่</p>
+                         </div>
+                    </div>
+
+                <!-- Card 2 -->
+                    <div class="card module-2"><h2>2.Internal Link & Anchor Link</h2>
+                        <pre class="PP">
+                        &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+                        &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+                        &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
+                    </pre>
+                    <a href="" class="Tha">Cilck to Jump</a>
+                    <h3>This is the jump target.</h3>
+                    </div>
+
+
+                <!-- Card 3 -->
+                    <div class="card module-3">
+                        <h1 class="Pc">3.Email Link</h1>
+                        <pre class="PP">
+                        &lt;a href="mailto:student@example.com?subject=Hello"&gt;
+                        Send an Email
+                        &lt;/a&gt;
+                    </pre>
+                    <a href="mailto:674230017@webmail.npru.ac.th?subject=Hello" class="Than">Send an Email</a>
+                    </div>
+
+
+                 <!-- Card 4 -->
+                    <div class="card module-4">
+                        <h1 class="Pc">4.Download Linsk</h1>
+                    <pre class="PP">
+                        &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;;
+                    </pre>
+                     <a href="file/pp.png" class="Thana">Download Textfile</a>
+                     <p class="c1">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง </p>
+                    </div>
+                <!-- Card 5 -->
+                    <div class="card module-5">
+                    <h2>5.Button Link</h2>
+                    <p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+                    <pre class="PP">
+                        &lt;a href="https://www.example.com" class="btn-link"&gt;
+                            Visit Website
+                        &lt;/a&gt;
+                    </pre>
+                     <a href="" class="Th">Visit Website</a>
+                    <p>สร้างปุ่มด้วยเเท็ก Bottom</p>
+                      <pre class="PP">
+                        &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+                        - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+                        - ผูกกับ DOM (document) โดยตรง
+                        &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website
+                        &lt;/button&gt;
+                        - นิยมใช้มากกว่า
+                        - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+                        - ผูกกับ window โดยตรง
+                        </pre>
+                        <p></p>
+                        <button class="Ass">HTML Tutorial</button>
+                        <p></p>
+                        <button class="Ass">Visit Website</button>
+                        <p></p>
+                        <button class="Ass">SUBSCRIBE</button>
+                        <p></p>
+                        <button class="Ass"></button>
+                        <p></p>
+                        <button class="Ass"></button>
+                        <p></p>
+                        <button class="Ass"></button>
+                    </div>
+
+
+                        <!-- Card 6 -->
+                        <div class="card module-6">
+                        <h2>6.Image Link</h2>
+                        <p>คลิกที่รูปเพื่อเปิดลิ้งค์</p>
+                        <pre class="PP">&lt;a href="https://youtube.com"&gt;
+                            &lt;img src="images/sample.jpg" width="250"&gt;
+                            &lt;/a&gt;
+                        </pre>
+                        <a href="https://www.youtube.com/watch?v=aNlx5y2TdaU&list=RDkNUg8ZEb48o&index=6" target="_blank">
+                            <img src="file/youtube.png" alt="YouTube" width="150" height="100">
+                        </a>
+                            <div class="note">📍หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jpg</div>
+                    </div>
+           </div>
+        
+                    <a href="index.html"class="Thanas">&larr; Back to HTML Tutorial </a>
+                </div>
         </div>
+    </div>
     </body>
 </html>
