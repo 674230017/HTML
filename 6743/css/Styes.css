@@ -1,0 +1,155 @@
+<style>
+        /* CSS Global  */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        * body {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: beige;
+            color: black;
+            padding: 0;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            background-color: blueviolet;
+            margin: 0 auto;
+        }
+
+        /* Card base */
+        .card {
+
+        }
+
+
+        /* Different module colors */
+        .card.module-2 {}
+
+
+        pre {}
+
+        .note {}
+
+        .note::before {}
+
+
+        code {
+            background-color: azure;
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+
+        .badge {}
+
+
+        /* Images (global safe defaults) */
+        img {}
+
+        /* CSS For Group 1: Header  */
+
+        header{
+            background-color: beige;
+            padding: 20px;
+            box-shadow: 5px  5px  5px  black;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+
+
+
+
+        }
+
+
+            h1{
+                color: brown;
+            }
+
+            .list-menu {
+                display: flex;
+                list-style: none;
+
+                gap: 20px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .list-menu li {
+                background-color: aquamarine;
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin-top: 10px;
+
+            }
+
+            .list-menu li a{
+                text-decoration: none;
+                color: azure;
+                font-weight: 10px;
+            }
+
+            .list-menu li :hover {
+                background-color: brown;
+            }
+       
+
+
+        
+        
+        
+        
+
+
+
+        /* CSS For Group 2: Card 1: Basics  */
+
+
+        /* CSS For Group 3: Card 2: Resize & aspect  */
+        .img_small {
+            
+            width: 10%;
+        }
+
+        .img_small.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img_small.right {
+            margin-left: auto;
+        }
+
+        /* CSS For Group 4: Card 3: Object fit  */
+
+
+        /* CSS For Group 5: Card 4: Image as Link  */
+
+        /* CSS For Group 6: Card 5: Gallery  */
+
+
+        /* CSS For Group 7: Card 6: Responsive  */
+
+
+        /* CSS For Group 8: Card 7: Figure & Caption + Task  */
+
+
+        /* CSS For Group 9: Card 8: Local file tips  */
+
+
+        /* CSS For Group 10: Back to Tutorial */
+    </style>
