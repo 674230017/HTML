@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายงานผลเกรด</title> 
+
+    <style>
+        body {
+            background-color: #f144b7;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tahoma', sans-serif;+
+            
+        }
+
+
+        .header {
+            background-color: #fb7bdb;
+            color: rgb(0, 0, 0);
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+
+        .content {
+            max-width:1000px ;
+            margin: auto;
+        }
+
+
+        .card {
+            background-color: white;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+        }
+        
+        .card2 {
+            background-color: #e876ff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            width: 500px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .card3 {
+            padding: 12px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .card4 {
+            background-color: #53b2ff;
+            padding: 16px 10px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 24px;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px blue;
+
+
+        }
+
+
+        img {
+            width: 220px;
+            height: 220px;
+            margin-left: 99px;
+            margin-top: 50px ;
+            border-radius: 1000px;
+            border: 4px solid;
+            transition: 1s;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+
+
+        }
+
+
+
+        .nui {
+            border-bottom: 2px solid pink;
+            font-size: 32px;
+            line-height: 1.5;
+
+        }
+
+        .sai {
+            display: grid;
+            margin-left: 10px;
+            grid-template-columns: 3fr 3fr;
+
+        }
+
+
+        .PP {
+            background-color: #53b2ff;
+            color: #17468d;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 0 10px;
+            width: 210px;
+            margin-left: 35px;
+            transition: 0.5s;
+        }
+
+        .P2 {
+            background-color: #53b2ff;
+            color: #17468d;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 24px;
+            margin: 0 10px;
+            margin-left: 35px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .P2:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgb(244, 241, 241);
+            
+        }
+
+
+        .PP:hover {
+            background-color: #5b1ee9;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+
+            background-color: #fb7bdb;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 25px;
+            margin-top: 150px;
+            font-size: 16px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">    
+        <h1>🧑‍🎓 รายงานผลเกรด</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="card">
+            <a href="#1" class="PP">👨‍🎓 ข้อมูลนักศึกษา</a>
+            <a href="#2" class="PP">📖 ผลการเรียน</a>
+            <a href="#3" class="PP">☎️ ติดต่อ</a>
+        </div>
+
+        <div class="card" id="1">
+            <div class="card2">
+
+                <p class="nui">Mr. Thanasak Khayandee</p>
+
+                <div class="sai">
+                    <p>รหัสนักศึกษา:</p>
+                    <p>674230017</p>
+                </div>
+
+                <div class="sai">
+                    <p>หมู่เรียน:</p>
+                    <p>67/43</p>
+                </div>
+
+                <div class="sai">
+                    <p>อาจารย์ที่ปรึกษา:</p>
+                    <p>พิชยา สุขปลั่ง</p>
+                </div>
+
+                <div>
+                    <p>Github:</p>
+                </div>
+            </div>
+            <img src="pp1.webp" alt="logo pp1">
+        </div>
+
+        <div class="card3" id="2">
+            <div class="P2">
+                <p> ปี1 เทอม1 : 2.99</p>
+            </div>
+
+            <div class="P2">
+                <p> ปี1 เทอม2 : 3.00 </p>
+            </div>
+
+            <div class="P2">
+                <p> ปี2 เทอม1 : 3.80</p>
+            </div>
+
+        </div>
+
+        <div class="card4">
+            <p>เกรดเฉลี่ยสะสม : 3.26 </p>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="footer" id="3">
+        <p> ©️ 2024 Webmaster by Thanasak Khayandee. ID 674230017.</p>
+        <p> 🏫 Nakhon Pathom Rajabhat University</p>
+    </div>
+
+</body>
+
+</html>
