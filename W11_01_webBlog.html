@@ -32,14 +32,20 @@
     <!---Navdar--->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">AI Technology</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
-            </ul>
+            <div id="hamburger-menu">
+                <span></span>
+
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="index.html">AI Technology</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Deep Learning</a></li>
+                    <li><a href="#">AI Tools</a></li>
+                    <li><a href="#contack">AI News</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -218,7 +224,7 @@
 
                     <!---card 03--->
 
-                    <div class="card">
+                    <div class="card" id="contack">
                         <div class="contact-form-card">
                             <div class="contact-title">
                                 <h2>📞 ติดต่อเรา</h2>
@@ -429,10 +435,7 @@
                             <span>MAR</span>
                         </div>
                     </header>
-                    <div class="post-image">
-                        <img src="https://static.vecteezy.com/system/resources/previews/001/223/495/large_2x/scenic-view-of-ocean-sunset-free-photo.jpg"
-                            alt="view Photo">
-                    </div>
+
                     <p class="post-description">
                         สรุปข้อมูลราคาทองคําแท่งในประเทศชนิด 96.5% เริ่มตั้งแต่ปี 2549 ถึงปีปัจจุบัน 2568
                         โดยเป็นการแสดงราคาต่ำสุด ราคาสูงสุดของทุกๆ เดือน รวมถึง
@@ -457,51 +460,98 @@
                                 </tr>
                             </thead>
                             <tbody>
+
+                                 <tr>
+                            <th>เม.ย.</th>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon dowm"></span>
+                                    +1,950
+                                </span>
+                            </td>
+                            <td>49,100</td>
+                            <td>54,800</td>
+                        </tr>
+                               <tr>
+                            <th>มี.ค.</th>
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon dowm"></span>
+                                    +1,700
+                                </span>
+                            </td>
+                            <td>78,750</td>
+                            <td>79,050</td>
+
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon up"></span>
+                                    +3,750
+                                </span>
+                            <td>46,350</td>
+                            <td>50,100</td>
+                        </tr>
                                 <tr>
-                                    <th>เม.ย</th>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>+1,950</td>
-                                    <td>49,100</td>
-                                    <td>54,800</td>
-                                </tr>
+                            <th>ก.พ.</th>
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon up"></span>
+                                    +3,400
+                                </span>
+                            <td>68,200</td>
+                            <td>77,600</td>
+
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon dowm"></span>
+                                    <span class="">+1,850</span>
+                                </span>
+                            <td>44,600</td>
+                            <td>47,450</td>
+                        </tr>
                                 <tr>
-                                    <th>มี.ค</th>
-                                    <td>+1,700</td>
-                                    <td>78,750</td>
-                                    <td>79,050</td>
-                                    <td>+3,750</td>
-                                    <td>46,350</td>
-                                    <td>50,100</td>
-                                </tr>
-                                <tr>
-                                    <th>ก.พ.</th>
-                                    <td>+3,400</td>
-                                    <td>68,200</td>
-                                    <td>77,600 </td>
-                                    <td>+1,850</td>
-                                    <td>44,600</td>
-                                    <td>47,450</td>
-                                </tr>
-                                <tr>
-                                    <th>ม.ค.</th>
-                                    <td>+9,250</td>
-                                    <td>64,550</td>
-                                    <td>81,950</td>
-                                    <td>+2,050</td>
-                                    <td>42,550</td>
-                                    <td>81,950</td>
-                                </tr>
-                                <tr>
-                                    <th>ทั้งปี</th>
-                                    <td>+14,350</td>
-                                    <td>64,550</td>
-                                    <td>81,950</td>
-                                    <td>+22,550</td>
-                                    <td>42,550</td>
-                                    <td>67,400</td>
-                                </tr>
+                            <th>ม.ค.</th>
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon up"></span>
+                                    +9,250
+                                </span>
+                            <td>64,550</td>
+                            <td>81,950</td>
+
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon up"></span>
+                                    +9,250
+                                </span>
+                            </td>
+                            <td>42,550</td>
+                            <td>44,850</td>
+                        </tr>
+                                 <tr class="total">
+                            <th>ทั้งปี</th>
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon up"></span>
+                                    <b>+1,4350</b>
+                                </span>
+                            </td>
+                            <td><b>64,550</b></td>
+                            <td><b>81,950</b></td>
+
+                            <td>
+                                <span class="price-up">
+                                    <span class="icon up"></span>
+                                    <b>+22,550</b>
+                                </span>
+                            </td>
+                            <td><b>42,550</b></span></td>
+                            <td><b>67,400</b></td>
+                        </tr>
                             </tbody>
                         </table>
                     </div>
@@ -530,6 +580,28 @@
         © 2025 Thanasak — All rights reserved.
         Designed for educational/demo purposes <a href="">• Contact</a>
     </footer>
+
+<script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+</script>
 </body>
 
 </html>
