@@ -670,41 +670,66 @@ html{font-size: 14px;}
     content: "";
   }
 
+  
+  #hamburger-menu span {
+    top: 13px;
+  }
+  #hamburger-menu span:before {
+    top: -8px;
+  }
+  #hamburger-menu span:after {
+    top: 8px;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* สร้างเส้น X */
+  #hamburger-menu.close span:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #hamburger-menu.close span {
+    background: transparent;
+  }
+  #hamburger-menu.close span:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  #menu.overley {
+    display: flex;
+  }
+
+  /*ซ่อนเมนู*/
   #menu {
     display: none;
   }
+
+  .order-box-table{order:1;}
+  .order-box-form{order:2;}
+  .order-box-image{order:3;}
+
+  .sidebar-widget{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-w-intro{order: -5;}
   
+  .order-w-f-red{order: -1;}
+  
+  .order-w-f-pulple{order: -2;}
+  
+  .order-w-f-fb{order: -4;}
+  
+  .order-w-f-sponsor{order: -3;}
+
+
 }
 
-#hamburger-menu span {
-  top: 13px;
-}
-#hamburger-menu span:before {
-  top: -8px;
-}
-#hamburger-menu span:after {
-  top: 8px;
-}
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-/* สร้างเส้น X */
-#hamburger-menu.close span:before {
-  transform: rotate(45deg);
-  top: 0;
-}
-#hamburger-menu.close span {
-  background: transparent;
-}
-#hamburger-menu.close span:after {
-  transform: rotate(-45deg);
-  top: 0;
-}
 
-#menu.overley {
-  display: flex;
-}
 
 
 
